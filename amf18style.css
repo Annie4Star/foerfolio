@@ -1,0 +1,163 @@
+/*Full screen*/
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	min-height: 100% auto;
+	position: relative;
+	color: rgb(242, 185, 159);
+	background-color: rgb(55,42,64);
+	margin:0;
+	padding: 0;
+	font-family: 'futura', Arial, sans-serif;
+	font-size: 2.5vh;
+	overflow: inherit;
+}
+
+header {
+	display: block;
+	box-sizing: inherit;
+	position: fixed;
+	width: 100%;
+	margin: 0 auto;
+	top: 0 auto;
+	left: 0 auto;
+	color: rgb(194,224,196);
+	background-color: rgb(55,42,64);
+	font-size: 3.5vh;
+	padding-left: 2em;
+	z-index: 4;
+}
+
+a.navifix {
+	display: inline-block;
+	min-width: 6.5em;
+	padding: .2em;
+}
+
+a.navifix:hover {
+	color: rgb(126,168,183);
+	background-color: rgb(194,224,196);
+}
+
+ul.top-navigation {
+	list-style-type: none;
+	margin-left: -2.15em;
+}
+
+ul.top-navigation li {
+	display: inline;
+}
+
+ul.top-navigation li :hover :not(a) {
+	color: rgb(194,224,196);
+	background-color: rgb(126,168,183);
+}
+
+ul.top-navigation li a {
+	color: rgb(194,224,196);
+	text-decoration: none;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropbtn {
+	color: rgb(194,224,196);
+	background-color: unset;
+	font-family: sans-serif;
+	font-size: 3.5vh;
+	text-align: left;
+	border: none;
+	cursor: default;
+	min-width: 6.5em;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	width: 100%;
+	background-color: rgb(126,168,183);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: rgb(194,224,196);
+	padding: .25em;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	color: rgb(126,168,183);
+	background-color: rgb(194,224,196);
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.content {
+	display: block;
+	box-sizing: inherit;
+	z-index: 2;
+	position: inherit;
+	top: 30vh;
+	left: 15%;
+	right: auto;
+	width: 70%;
+	min-height: calc(100% - 10%);
+	margin-bottom: 10vh;
+	padding-top: 5vh;
+	overflow: unset;
+}
+
+.contentgrid {
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	grid-template-rows: auto auto auto;
+	grid-gap: 4%;
+}
+
+footer {
+	display: block;
+	box-sizing: inherit;
+	position: absolute;
+	height: auto;
+	z-index: 1;
+	bottom: 0 auto;
+	left: 0;
+	right: 0;
+	color: rgb(194,224,196);
+	padding: 1rem;
+	font-size: 1.5vh;
+	margin-top: 30vh;
+}
+
+header h1 {
+	margin-bottom: -2.5vh;
+}
+
+h1 a {
+	color: rgb(194,224,196);
+	font-family: 'avenir std (heavy)', 'arial black', sans-serif;
+}
+
+footer a {
+	color: rgb(126,168,183);
+	text-decoration: underline;
+}
+
+a {color: rgb(126,168,183); text-decoration: none;}
+a:hover {color: rgb(194,224,196);}
+a:visited {color: rgb(194,224,196);}
