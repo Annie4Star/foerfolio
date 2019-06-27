@@ -13,11 +13,11 @@ html {
 body {
 	min-height: 100% auto;
 	position: relative;
-	color: rgb(242, 185, 159);
-	background-color: rgb(55,42,64);
+	color: black;
+	background: linear-gradient(180deg, #7d9bbf, #a3a3af, #ffd3a2, #debaa2);
 	margin:0;
 	padding: 0;
-	font-family: 'futura', Arial, sans-serif;
+	font-family: 'Trebuchet MS', 'Verdana', 'Arial', 'sans-serif';
 	font-size: 2.5vh;
 	overflow: inherit;
 }
@@ -30,8 +30,9 @@ header {
 	margin: 0 auto;
 	top: 0 auto;
 	left: 0 auto;
-	color: rgb(194,224,196);
-	background-color: rgb(55,42,64);
+	color: #1a232a;
+	/*background-color: rgb(55,42,64);*/
+	font-family: 'Trebuchet MS', 'Open Sans', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-size: 3.5vh;
 	padding-left: 2em;
 	z-index: 4;
@@ -44,8 +45,8 @@ a.navifix {
 }
 
 a.navifix:hover {
-	color: rgb(126,168,183);
-	background-color: rgb(194,224,196);
+	color: #debaa2;
+	background-color: #1a232a;
 }
 
 ul.top-navigation {
@@ -58,12 +59,12 @@ ul.top-navigation li {
 }
 
 ul.top-navigation li :hover :not(a) {
-	color: rgb(194,224,196);
-	background-color: rgb(126,168,183);
+	color: #1a232a;
+	background-color: #debaa2;
 }
 
 ul.top-navigation li a {
-	color: rgb(194,224,196);
+	color: #1a232a;
 	text-decoration: none;
 }
 
@@ -73,7 +74,7 @@ ul.top-navigation li a {
 }
 
 .dropbtn {
-	color: rgb(194,224,196);
+	color: #1a232a;
 	background-color: unset;
 	font-family: sans-serif;
 	font-size: 3.5vh;
@@ -87,20 +88,20 @@ ul.top-navigation li a {
 	display: none;
 	position: absolute;
 	width: 100%;
-	background-color: rgb(126,168,183);
+	background-color: #debaa2;
 	z-index: 1;
 }
 
 .dropdown-content a {
-	color: rgb(194,224,196);
+	color: #1a232a;
 	padding: .25em;
 	text-decoration: none;
 	display: block;
 }
 
 .dropdown-content a:hover {
-	color: rgb(126,168,183);
-	background-color: rgb(194,224,196);
+	color: #debaa2;
+	background-color: #1a232a;
 }
 
 .dropdown:hover .dropdown-content {
@@ -138,7 +139,7 @@ footer {
 	bottom: 0 auto;
 	left: 0;
 	right: 0;
-	color: rgb(194,224,196);
+	color: #7d9bbf;
 	padding: 1rem;
 	font-size: 1.5vh;
 	margin-top: 30vh;
@@ -149,15 +150,15 @@ header h1 {
 }
 
 h1 a {
-	color: rgb(194,224,196);
-	font-family: 'avenir std (heavy)', 'arial black', sans-serif;
+	color: #1a232a;
+	font-family: 'roboto', sans-serif;
 }
 
 footer a {
-	color: rgb(126,168,183);
+	color: #a3a3af;
 	text-decoration: underline;
 }
 
-a {color: rgb(126,168,183); text-decoration: none;}
-a:hover {color: rgb(194,224,196);}
-a:visited {color: rgb(194,224,196);}
+a {color: #a3a3af; text-decoration: none;}
+a:hover {color: #1a232a;}
+a:visited {color: #a3a3af;}
