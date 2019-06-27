@@ -139,7 +139,7 @@ footer {
 	bottom: 0 auto;
 	left: 0;
 	right: 0;
-	color: #7d9bbf;
+	color: #1a232a;
 	padding: 1rem;
 	font-size: 1.5vh;
 	margin-top: 30vh;
@@ -160,5 +160,5 @@ footer a {
 }
 
 a {color: #a3a3af; text-decoration: none;}
-a:hover {color: #1a232a;}
+a:hover {color: #debaa2;}
 a:visited {color: #a3a3af;}
