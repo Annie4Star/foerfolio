@@ -1,25 +1,28 @@
 /*Full screen*/
 html {
 	height: 100%;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 }
 
-*,
+/**,
 *:before,
 *:after {
 	box-sizing: inherit;
-}
+}*/
 
 body {
-	min-height: 100% auto;
+	height: 100%;
 	position: relative;
 	color: black;
-	background: linear-gradient(180deg, #7d9bbf, #a3a3af, #ffd3a2, #debaa2);
+	background-color: #7d9bbf;
+	background: linear-gradient(#7d9bbf, #a3a3af, #ffd3a2, #debaa2);
+	background-repeat: no-repeat;
+	/*background-attachment: fixed;*/
 	margin:0;
 	padding: 0;
 	font-family: 'Trebuchet MS', 'Verdana', 'Arial', 'sans-serif';
 	font-size: 2.5vh;
-	overflow: inherit;
+	overflow: auto;
 }
 
 header {
