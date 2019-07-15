@@ -21,7 +21,7 @@ body {
 	/*background-attachment: fixed;*/
 	margin:0;
 	padding: 0;
-	font-family: 'Trebuchet MS', 'Verdana', 'Arial', 'sans-serif';
+	font-family: 'Roboto', 'Lato', 'Trebuchet MS', 'sans-serif' !important;
 	font-size: 2.5vh;
 	overflow: auto;
 }
@@ -36,8 +36,10 @@ header {
 	left: 0 auto;
 	color: #ffffaa;
 	/*background-color: rgb(55,42,64);*/
-	font-family: 'Trebuchet MS', 'Open Sans', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	background-color: #a8612d;
+	font-family: 'Roboto', 'Open Sans', 'Trebuchet MS', sans-serif !important;
 	font-size: 3.5vh;
+	font-weight: 500;
 	padding-left: 2em;
 	z-index: 4;
 }
@@ -60,6 +62,7 @@ ul.top-navigation {
 
 ul.top-navigation li {
 	display: inline;
+	font-size: 1.5rem;
 }
 
 ul.top-navigation li :hover :not(a) {
@@ -81,7 +84,7 @@ ul.top-navigation li a {
 	color: #ffffaa;
 	background-color: unset;
 	font-family: sans-serif;
-	font-size: 3.5vh;
+	font-size: 2.5vh;
 	text-align: left;
 	border: none;
 	cursor: default;
