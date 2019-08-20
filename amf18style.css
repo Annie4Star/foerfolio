@@ -1,7 +1,8 @@
 /*Full screen*/
 html {
-	height: 100%;
-	/*box-sizing: border-box;*/
+/*margin:0;
+padding:0;*/
+height:100%;
 }
 
 /**,
@@ -12,15 +13,21 @@ html {
 
 body {
 	height: 100%;
+	margin: 0;
+	padding: 0;
 	position: relative;
 	color: black;
-	background-color: #7d9bbf;
-	background: linear-gradient(#0a1a33, #6287a2);
+	background: -moz-linear-gradient(top, #0a1a33, #6287a2);
+	/*background: -webkit-gradient(linear, top bottom, color-stop (100%, #0a1a33), color-stop (100%, #6287a2);*/
+	background: -webkit-linear-gradient(top, #0a1a33 33%,#6287a2 100%); 
 	/*background: linear-gradient(#7d9bbf, #a3a3af, #ffd3a2, #debaa2);*/
+	background: -o-linear-gradient(top, #0a1a33 0%,#6287a2 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #0a1a33 0%,#6287a2 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f1c0', endColorstr='#b7ad70',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #0a1a33 0%,#6287a2 100%); /* W3C */
+	background-color: #6287a2;
 	background-repeat: no-repeat;
-	/*background-attachment: fixed;*/
-	margin:0;
-	padding: 0;
+	background-attachment: fixed;
 	font-family: 'Roboto', 'Lato', 'Trebuchet MS', 'sans-serif' !important;
 	font-size: 2.5vh;
 	overflow: auto;
@@ -136,6 +143,41 @@ ul.top-navigation li a {
 	grid-template-rows: auto auto auto;
 	grid-gap: 4%;
 }
+
+.photoram-row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .photoram-column {
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+  }
+  
+  .photoram-column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+	.photoram-column {
+	  flex: 50%;
+	  max-width: 50%;
+	}
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.photoram-column {
+	  flex: 100%;
+	  max-width: 100%;
+	}
+  }
 
 footer {
 	display: block;
