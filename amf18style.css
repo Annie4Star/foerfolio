@@ -233,12 +233,13 @@ img.center {
 /***Style the unordered list with the class 'enlarge'***/
 ul.enlarge{
 	list-style-type:none; /*remove the bullet point*/
+	text-align: center;
 	}
 ul.enlarge li{
 	display:inline-block; /*places the images in a line*/
 	position: relative; /*allows precise positioning of the popup image when used with position:absolute - see support section */
 	z-index: 0; /*resets the stack order of the list items - we'll increase in step 4. See support section for more info*/
-	margin:25px 40px 25px 60px; /*space between the images*/
+	margin:25px 30px 25px 20px; /*space between the images*/
 	}
 
 ul.enlarge span{
