@@ -36,6 +36,20 @@ body {
 	overflow: auto;
 }
 
+body::-webkit-scrollbar {
+	width: .5vw;
+}
+
+body::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.5);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #0a1a33;
+	border-radius: 10px;
+	outline: 1px solid #6287a2;
+}
+
 header {
 	display: block;
 	box-sizing: inherit;
@@ -44,11 +58,11 @@ header {
 	margin: 0 auto;
 	/*top: 0 auto;
 	left: 0 auto;*/
-	color: #ffffaa;
+	color: #fffeab;
 	/*background-color: rgb(55,42,64);*/
 	background-color: #a8612d;
 	font-family: 'Roboto', 'Open Sans', 'Trebuchet MS', sans-serif !important;
-	font-size: 3vh;
+	font-size: 18px;
 	font-weight: 500;
 	padding-left: 2em;
 	z-index: 4;
@@ -56,32 +70,32 @@ header {
 
 a.navifix {
 	display: inline-block;
-	min-width: 6.5em;
-	padding: .2em;
+	min-width: 7.25em;
+	padding: .25em;
 }
 
 a.navifix:hover {
 	color: #a8612d;
-	background-color: #ffffaa;
+	background-color: #fffeab;
 }
 
 ul.top-navigation {
 	list-style-type: none;
-	margin-left: -2.15em;
+	margin-left: -2.8em;
 }
 
 ul.top-navigation li {
 	display: inline;
-	font-size: 1.5rem;
+	font-size: 18px;
 }
 
 ul.top-navigation li :hover :not(a) {
-	color: #ffffaa;
+	color: #fffeab;
 	background-color: #a8612d;
 }
 
 ul.top-navigation li a {
-	color: #ffffaa;
+	color: #fffeab;
 	text-decoration: none;
 }
 
@@ -91,14 +105,20 @@ ul.top-navigation li a {
 }
 
 .dropbtn {
-	color: #ffffaa;
+	color: #fffeab;
 	background-color: unset;
 	font-family: sans-serif;
-	font-size: 2.5vh;
+	font-size: 18px;
 	text-align: left;
 	border: none;
 	cursor: default;
-	min-width: 6.5em;
+	min-width: 7.25em;
+}
+
+.dropdown-content:hover:parent {
+	-moz-box-shadow: 0 8px 6px -6px #0a1a33;
+	-webkit-box-shadow: 0 8px 6px -6px #0a1a33;
+	box-shadow: 0 8px 6px -6px #0a1a33;
 }
 
 .dropdown-content {
@@ -110,7 +130,7 @@ ul.top-navigation li a {
 }
 
 .dropdown-content a {
-	color: #ffffaa;
+	color: #fffeab;
 	padding: .25em;
 	text-decoration: none;
 	display: block;
@@ -118,11 +138,14 @@ ul.top-navigation li a {
 
 .dropdown-content a:hover {
 	color: #a8612d;
-	background-color: #ffffaa;
+	background-color: #fffeab;
 }
 
 .dropdown:hover .dropdown-content {
 	display: block;
+	-moz-box-shadow: 0 8px 6px -6px #0a1a33;
+	-webkit-box-shadow: 0 8px 6px -6px #0a1a33;
+	box-shadow: 0 8px 6px -6px #0a1a33;
 }
 
 .content {
@@ -139,7 +162,7 @@ ul.top-navigation li a {
 	padding: 7.5vh;
 	padding-bottom: 10vh;
 	overflow: unset;
-	background: #ffffaa;
+	background: #fffeab;
 	border-radius: 15px;
 }
 
@@ -239,7 +262,7 @@ ul.enlarge li{
 	display:inline-block; /*places the images in a line*/
 	position: relative; /*allows precise positioning of the popup image when used with position:absolute - see support section */
 	z-index: 0; /*resets the stack order of the list items - we'll increase in step 4. See support section for more info*/
-	margin:25px 30px 25px 20px; /*space between the images*/
+	margin:35px 50px 35px 45px; /*space between the images*/
 	}
 
 ul.enlarge span{
@@ -278,7 +301,7 @@ ul.enlarge li:hover:nth-child(3) span{
 /***Override the styling of images set in step 3 to make the frame smaller and the background darker***/
 ul.enlarge span img{
 	padding: 2px; /*size of the frame*/
-	background: #ffffaa; /*colour of the frame*/
+	background: #fffeab; /*colour of the frame*/
 	}
 	/***Style the <span> containing the framed images and the caption***/
 ul.enlarge span{
@@ -300,6 +323,64 @@ ul.enlarge span{
 	color: #0a1a33;
 	}
 
+	footer {
+		display: block;
+		box-sizing: inherit;
+		position: absolute;
+		height: auto;
+		z-index: 1;
+		bottom: 0 auto;
+		left: 0;
+		right: 0;
+		color: #fffeab;
+		padding: 1rem;
+		font-size: 1.5vh;
+		margin-top: 30vh;
+	}
+	
+	header h1 {
+		margin-bottom: -2.5vh;
+		letter-spacing: 2px;
+	}
+	
+	
+	h1 a {
+		color: #fffeab;
+		font-family: 'roboto', sans-serif;
+	}
+
+	h1 a:visited {
+		color: #fffeab;
+		font-family: 'roboto', sans-serif;
+	}
+
+	.info {
+		color: #6287a2;
+		font-style: italic;
+		font-size: 11px;
+	}
+
+	.outgoing a {
+		color: black;
+	}
+
+	.outgoing a:hover{
+		color: #6287a2;
+	}
+	
+	h1 a:hover {
+		color: #fffeab;
+	}
+	
+	footer a {
+		color: #0a1a33;
+		text-decoration: underline;
+	}
+	
+	a {color: #a3a3af; text-decoration: none;}
+	a:hover {color: #a8612d;}
+	a:visited {color: #a3a3af;}
+
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
 	.photoram-column {
@@ -315,41 +396,3 @@ ul.enlarge span{
 	  max-width: 100%;
 	}
   }
-
-footer {
-	display: block;
-	box-sizing: inherit;
-	position: absolute;
-	height: auto;
-	z-index: 1;
-	bottom: 0 auto;
-	left: 0;
-	right: 0;
-	color: #ffffaa;
-	padding: 1rem;
-	font-size: 1.5vh;
-	margin-top: 30vh;
-}
-
-header h1 {
-	margin-bottom: -2.5vh;
-}
-
-
-h1 a {
-	color: #ffffaa;
-	font-family: 'roboto', sans-serif;
-}
-
-h1 a:hover {
-	color: #ffffaa;
-}
-
-footer a {
-	color: #0a1a33;
-	text-decoration: underline;
-}
-
-a {color: #a3a3af; text-decoration: none;}
-a:hover {color: #a8612d;}
-a:visited {color: #a3a3af;}
