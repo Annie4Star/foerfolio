@@ -28,7 +28,7 @@ body {
 	background-image: -ms-linear-gradient(top,  #0a1a33 32%,#6287a2); /* IE10 preview */
 	background-image: linear-gradient(to bottom,  #0a1a33 32%,#6287a2); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	font-family: /*'Roboto',*/ 'Lato', 'Trebuchet MS', 'sans-serif' !important;
-	font-size: 2.5vh;
+	font-size: 2.55vh;
 	line-height: 3vh;
 	letter-spacing: .075vw;
 	overflow: auto;
@@ -56,19 +56,20 @@ a.navifix:hover {
 	font-weight: 600;
 }
 
-h2.outgoing a {
+a.outgoing {
+	color: #0a1a33;
+	font-weight: 800;
+}
+
+a.outgoing:visited {
 	color: #0a1a33;
 }
 
-h2.outgoing a:visited {
-	color: #0a1a33;
-}
-
-h2.outgoing a:hover {
+a.outgoing:hover {
 	color: #6287a2;
 }
 
-h2.outgoing a:active {
+a.outgoing:active {
 	color: red;
 }
 footer a {
@@ -216,16 +217,22 @@ ul.top-navigation li a {
 	z-index: 2;
 	position: inherit;
 	top: 20vh;
-	left: 15%;
+	left: 12.5%;
 	right: auto;
-	width: 60%;
+	width: 65%;
 	min-height: calc(100% - 20%);
 	margin-bottom: 5vh;
-	padding: 7.5vh;
+	padding: 8vh;
 	padding-bottom: 12.5vh;
 	overflow: unset;
 	background: #fffeab;
 	border-radius: 15px;
+}
+
+.content p {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .contentgrid {
@@ -398,37 +405,32 @@ ul.enlarge span{
 	text-align: center;
 	font-style: italic;
 	color: #0a1a33;
-	}
+}
 
-	footer {
-		display: block;
-		box-sizing: inherit;
-		position: absolute;
-		height: auto;
-		z-index: 1;
-		bottom: 0 auto;
-		left: 0;
-		right: 0;
-		color: #241A18;
-		padding: 1rem;
-		font-size: 1.5vh;
-		margin-top: 30vh;
-	}
-	
-	img + p {
+img + p {
 		color: #0a1a33;
 		font-style: italic;
 		font-size: 11px;
-	}
+}
 
-	.resumecol {
+iframe {
+	display: block;
+	margin: 0 auto;
+	margin-top: 3vh;
+}
+
+iframe + p {
+		margin-bottom: 6vh;
+}
+
+.resumecol {
 		-webkit-columns: .333vw 2;
 		-moz-columns: .333vw 2;
 		columns: .333vw 2;
 		-webkit-column-gap: 2em;
 		-moz-column-gap: 2em;
 		column-gap: 2em;
-	}
+}
 
 	.resumecol h3 {
 		-webkit-column-span: all;
@@ -460,6 +462,22 @@ ul.enlarge span{
 		width:fit-content;
 		border-bottom: .25vh solid #241A18;
 	}
+
+	footer {
+		display: block;
+		box-sizing: inherit;
+		position: absolute;
+		height: auto;
+		z-index: 1;
+		bottom: 0 auto;
+		left: 0;
+		right: 0;
+		color: #241A18;
+		padding: 1rem;
+		font-size: 1.5vh;
+		margin-top: 20vh;
+	}
+	
 
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
