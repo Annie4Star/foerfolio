@@ -419,10 +419,6 @@ iframe {
 	margin-top: 3vh;
 }
 
-iframe + p {
-		margin-bottom: 6vh;
-}
-
 .resumecol {
 		-webkit-columns: .333vw 2;
 		-moz-columns: .333vw 2;
