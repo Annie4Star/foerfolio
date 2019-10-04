@@ -1,15 +1,7 @@
 /*Full screen*/
 html {
-/*margin:0;
-padding:0;*/
 height:100%;
 }
-
-/**,
-*:before,
-*:after {
-	box-sizing: inherit;
-}*/
 
 body {
 	height: 100vh;
@@ -229,11 +221,11 @@ ul.top-navigation li a {
 	border-radius: 15px;
 }
 
-.content p {
+/*.content p {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-}
+}*/
 
 .contentgrid {
 	display: grid;
@@ -419,6 +411,27 @@ iframe {
 	margin-top: 3vh;
 }
 
+.listcol {
+	-webkit-columns: .3vw 3;
+	-moz-columns: .3vw 3;
+	columns: .3vw 3;
+	-webkit-column-gap: .05vw;
+	-moz-column-gap: .05vw;
+	column-gap: .05vw;
+	column-fill: balance;
+	-moz-column-fill: balance;
+	-webkit-column-fill: balance;
+	height: 10vh;
+}
+
+.listcol ul {
+	-webkit-column-span: none;
+	-moz-column-span: none;
+	column-span: none;
+	margin-top: -.15rem;
+	line-height: 1.65rem;
+}
+
 .resumecol {
 		-webkit-columns: .333vw 2;
 		-moz-columns: .333vw 2;
@@ -428,14 +441,14 @@ iframe {
 		column-gap: 2em;
 }
 
-	.resumecol h3 {
+.resumecol h3 {
 		-webkit-column-span: all;
 		-moz-column-span: all;
 		column-span: all;
 		margin-bottom: .75em;
 	}
 
-	.resumecol ul {
+.resumecol ul {
 		-webkit-column-span: none;
 		-moz-column-span: none;
 		column-span: none;
@@ -443,7 +456,7 @@ iframe {
 		line-height: 1.33em;
 	}
 
-	.resumecol ul ul {
+.resumecol ul ul {
 		-webkit-column-span: none;
 		-moz-column-span: none;
 		column-span: none;
