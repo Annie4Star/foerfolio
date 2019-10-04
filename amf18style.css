@@ -421,7 +421,6 @@ iframe {
 	column-fill: balance;
 	-moz-column-fill: balance;
 	-webkit-column-fill: balance;
-	height: 10vh;
 }
 
 .listcol ul {
