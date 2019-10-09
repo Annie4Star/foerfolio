@@ -4,11 +4,9 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ann-Marie Foerster - Image editing, design, and more!</title>
-<script type="text/javascript" src="twentytwenty-master/js/jquery-3.4.1.min.js"></script>
-<link rel="stylesheet" type="text/css" href="amf18style.css">
-<!--<link rel="stylesheet" type="text/css" href="twentytwenty-master/css/foundation.css">
-<link rel="stylesheet" type="text/css" href="twentytwenty-master/css/twentytwenty-no-compass.css">-->
-<link rel="stylesheet" type="text/css" href="twentytwenty-master/css/twentytwenty.css">
+<script src="js/juxtapose.min.js"></script>
+<link rel="stylesheet" href="css/juxtapose.css">
+<link rel="stylesheet" type="text/css" href="css/amf18style.css">
 <style>
 	@import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
 </style>
@@ -65,21 +63,42 @@
 </header>
 
 <div class="content">
-	<div id="container" class="twentytwenty-container">
-		<img src="images/photoandedit/Dorothy-King-4th-Grade-001.jpg">
-		<img src="images/photoandedit/Dorothy-King-4th-Grade-fix.jpg">
+	<h2>Product Photography</h2>
+	<h3>Conrads College Gifts</h3>
+	<h3>akaneArt</h3>
+	<h3>Online Marketplaces</h3>
+	<h2>Photo Restoration</h2>
+	<p></p>
+	<div class="imagerow">
+		<img src="images/photoandedit/Dorothy-King-4th-Grade-001.jpg" height="300">
+		<img src="images/photoandedit/Dorothy-King-4th-Grade-fix.jpg" height="300">
+	<p>A side by side comparison of the torn and faded (before) image and my restoration and retouching (after) image.</p>
 	</div>
+	<div class="juxtapose" style="width: 45%;">
+		<script>
+	slider = new juxtapose.JXSlider('.juxtapose',
+		[
+			{
+				src: 'images/photoandedit/Dorothy-King-4th-Grade-001.jpg',
+				label: 'Damaged',
+			},
+			{
+				src: 'images/photoandedit/Dorothy-King-4th-Grade-fix.jpg',
+				label: 'Repaired',
+			}
+		],
+		{
+			animate: true,
+			showLabels: true,
+			showCredits: true,
+			startingPosition: "50%",
+			makeResponsive: true,
+		});
+		</script>
+	</div>
+	<h2>Gradient Mapping and Filters</h2>
 </div> <!--content-->
-
 <footer>2018.  Site created by Ann-Marie Foerster.  <a href="mailto:annmarie.foerster@gmail.com">Contact</a> for design or consultant inquiries.</footer>
-
-<script type="text/javascript" src="twentytwenty-master/js/jquery.event.move.js"></script>
-<script type="text/javascript" src="twentytwenty-master/js/jquery.twentytwenty.js"></script>
-<!--<script defer type="text/javascript">
-$(window).load(function() {
-  $("#container").twentytwenty();
-});
-</script>-->
 
 </body>
 </html>
