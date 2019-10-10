@@ -38,7 +38,7 @@ h1 a:visited {
 
 a.navifix {
 	display: inline-block;
-	min-width: 7em;
+	min-width: 4vw;
 	padding: .3em;
 }
 
@@ -152,7 +152,7 @@ ul.top-navigation li a {
 	letter-spacing: .15vw;
 	border: none;
 	cursor: default;
-	min-width: 7em;
+	min-width: 4vw;
 }
 
 .dropdown-content:hover:parent {
@@ -164,7 +164,7 @@ ul.top-navigation li a {
 .dropdown-content {
 	display: none;
 	position: absolute;
-	width: 100%;
+	min-width: 100%;
 	background-color: #a8612d;
 	z-index: 1;
 	font-size: 2.25vh;
@@ -192,9 +192,9 @@ ul.top-navigation li a {
 
 .sitename {
 	display: block;
-	margin-right: 5vw;
-	font-size: 3.125vh;
-	font-weight: 700;
+	margin-right: 3.5vw;
+	font-size: 5vh;
+	font-weight: 800;
 }
 
 /*header h1 {
@@ -517,5 +517,9 @@ footer {
 	.photoram-column {
 	  flex: 100%;
 	  max-width: 100%;
+	}
+
+	ul.enlarge li {
+		display: none;
 	}
   }
