@@ -19,7 +19,7 @@ body {
 	background-image: -o-linear-gradient(top,  #0a1a33 32%,#6287a2); /* Opera 11.10-11.50 */
 	background-image: -ms-linear-gradient(top,  #0a1a33 32%,#6287a2); /* IE10 preview */
 	background-image: linear-gradient(to bottom,  #0a1a33 32%,#6287a2); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	font-family: /*'Roboto',*/ 'Lato', 'Trebuchet MS', 'sans-serif' !important;
+	font-family: 'Roboto', /*'Lato',*/ 'Trebuchet MS', 'sans-serif' !important;
 	font-size: 2.55vh;
 	line-height: 3vh;
 	letter-spacing: .075vw;
@@ -28,12 +28,12 @@ body {
 
 h1 a {
 	color: #fffeab;
-	font-family: 'roboto', sans-serif;
+	font-family: 'lato', sans-serif;
 }
 
 h1 a:visited {
 	color: #fffeab;
-	font-family: 'roboto', sans-serif;
+	font-family: 'lato', sans-serif;
 }
 
 a.navifix {
@@ -104,7 +104,7 @@ header {
 	color: #fffeab;
 	/*background-color: rgb(55,42,64);*/
 	background-color: #a8612d;
-	font-family: 'Roboto', 'Open Sans', 'Trebuchet MS', sans-serif !important;
+	font-family: 'Lato', 'Open Sans', 'Trebuchet MS', sans-serif !important;
 	font-size: 18px;
 	padding-left: .23vw;
 	z-index: 4;
