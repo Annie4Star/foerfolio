@@ -147,7 +147,7 @@ ul.top-navigation li a {
 .dropbtn {
 	color: #fffeab;
 	background-color: unset;
-	font-family: sans-serif;
+	font-family: 'lato', sans-serif;
 	font-size: 2.5vh;
 	text-align: left;
 	letter-spacing: .15vw;
