@@ -19,7 +19,7 @@ body {
 	background-image: -o-linear-gradient(top,  #0a1a33 32%,#6287a2); /* Opera 11.10-11.50 */
 	background-image: -ms-linear-gradient(top,  #0a1a33 32%,#6287a2); /* IE10 preview */
 	background-image: linear-gradient(to bottom,  #0a1a33 32%,#6287a2); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	font-family: 'Roboto', /*'Lato',*/ 'Trebuchet MS', 'sans-serif' !important;
+	font-family: 'Roboto', sans-serif;
 	font-size: 2.55vh;
 	line-height: 3vh;
 	letter-spacing: .075vw;
@@ -104,7 +104,7 @@ header {
 	color: #fffeab;
 	/*background-color: rgb(55,42,64);*/
 	background-color: #a8612d;
-	font-family: 'Lato', 'Open Sans', 'Trebuchet MS', sans-serif !important;
+	font-family: 'Lato', sans-serif;
 	font-size: 18px;
 	padding-left: .23vw;
 	z-index: 4;
@@ -117,6 +117,7 @@ header {
 ul.top-navigation {
 	list-style-type: none;
 	/*margin-left: -2.2em;*/
+	font-family: 'Lato', sans-serif;
 	font-size: 2.5vh;
 	font-weight: 300;
 	letter-spacing: .15vw;
@@ -193,6 +194,7 @@ ul.top-navigation li a {
 .sitename {
 	display: block;
 	margin-right: 3.5vw;
+	font-family: 'Cormorant Garamond', serif;
 	font-size: 5vh;
 	font-weight: 800;
 }
@@ -202,6 +204,10 @@ ul.top-navigation li a {
 	font-size: 1em;
 	letter-spacing: 2px;
 }*/
+
+h2, h3, h4, h5 {
+	font-family: 'Lato', 'Open Sans', 'Trebuchet MS', sans-serif !important;
+}
 
 .content {
 	display: block;
@@ -295,6 +301,7 @@ ul.top-navigation li a {
 
 .navihoverbox .navihovertext {
 	text-align: center;
+	font-family: 'Lato', sans-serif;
 	font-size: 1.25rem;
 	display: inline-block;
 	position: absolute;
@@ -488,6 +495,28 @@ h2 {
 	border-bottom: .25vh solid #241A18;
 }
 
+label {
+	width: 19vw;
+	color: #0a1a33;
+	float: left;
+	text-align: left;
+}
+
+input, textarea {
+	border: #241A18 solid 1px;
+	margin-bottom: 2vh;
+}
+
+input:focus {
+	border: #a8612d solid 2px;
+	margin-top: -.1vh;
+	margin-bottom: 1.9vh;
+}
+
+textarea:focus {
+	border: #a8612d solid 2px;
+}
+
 footer {
 	display: block;
 	box-sizing: inherit;
@@ -505,13 +534,28 @@ footer {
 	
 
   /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1050px) {
 	.photoram-column {
 	  flex: 50%;
 	  max-width: 50%;
 	}
+
+  	ul.enlarge li {
+		margin: .5vh;
+		
+	}
+	
+	ul.enlarge img {
+		padding: 0px;
+		height: 20vh;
+	}
+
+	ul.enlarge span {
+		display: none;
+	}
+
   }
-  
+
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
 	.photoram-column {
@@ -519,7 +563,15 @@ footer {
 	  max-width: 100%;
 	}
 
-	ul.enlarge li {
+	ul.enlarge img {
+		margin: .33vh;
+		height: 15vh;
+	}
+	ul.enlarge img {
+		padding: 0px;
+	}
+	
+	ul.enlarge span {
 		display: none;
 	}
   }

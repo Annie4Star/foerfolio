@@ -6,7 +6,7 @@
 <title>Ann-Marie Foerster - Image editing, design, and more!</title>
 <link rel="stylesheet" type="text/css" href="css/amf18style.css">
 <style>
-	@import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Lato|Roboto&display=swap');
 </style>
 </head>
 <body>
@@ -67,44 +67,20 @@
 	<p>Required information is marked with an asterisk &#40;*&#41;.</p>
 	
 	<form action="" method="post">
-		First Name* <input type="text" name="FirstName" required><br />
-		Last Name* <input type="text" name="LastName" required><br />
-		Business or Company <input type="text" name="businessname"><br />
-		Email* <input type="email" name="emailaddress" required><br />
-		Phone Number <input type="tel" name="telephonenumer"><br />
-		City <input type="text" name="City"><br />
-		State/Province <input type="text" name="State/Province"><br />
-		Country <input type="text" name="Country"><br />
-		Reason for Contact<br />
-		<select>
-			<optgroup label="Prospective Clients">
-				<option value="availability">Designer Availability</option>
-				<option value="proposal">Project Proposal</option>
-				<option value="quotes">Project Quote</option>
-				<option value="policy">Policy Inquiry</option>
-			</optgroup>
-			<optgroup label="Current Clients">
-				<option value="status">Project Status</option>
-				<option value="additionalinfo">Additional Request</option>
-				<option value="revision">Revision Request</option>
-				<option value="returnproject">New Project</option>
-			</optgroup>
-			<optgroup label="Website">
-				<option value="error">Error or Typo</option>
-				<option value="comment">Suggestion</option>
-			</optgroup>
-		</select>
-		<p>Message<br />
+		<label>First Name*</label> <input type="text" name="FirstName" required><br />
+		<label>Last Name*</label> <input type="text" name="LastName" required><br />
+		<label>Business or Company</label> <input type="text" name="businessname"><br />
+		<label>Email*</label> <input type="email" name="emailaddress" required><br />
+		<p><label>Message</label><br />
 			<textarea rows="10" cols="50" wrap="soft"></textarea>
 		</p>
 		<p style="font-size:.85em;color:red;">No soliciting, please.  This contact form or the email account of the administrator are not to be used to sell web or app development, SEO ranking, or similar services.  Those contacting attempting to do so are in violation of this request and will be blacklisted.</p>
-		<p><input type="checkbox" name="nonsolicit" value="nosoliciting" required>I am using this contact form to contact the site admin, Ann-Marie Foerster, about .  I am not contacting the site, as a developer, to sell services to the administrator.</p>
+		<p><input type="checkbox" name="nonsolicit" value="nosoliciting" required>I am using this contact form to contact the site admin, Ann-Marie Foerster, about a project or its status.  I am not contacting the site, as a developer, to sell services to the administrator.</p>
 		<input type="submit" value="Submit">
 	</form>
-	
+
 </div> <!--content-->
 
 <footer>2018.  Site created by Ann-Marie Foerster.  <a href="mailto:annmarie.foerster@gmail.com">Contact</a> for design or consultant inquiries.</footer>
-
 </body>
 </html>
