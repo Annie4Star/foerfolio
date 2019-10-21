@@ -205,6 +205,10 @@ ul.top-navigation li a {
 	font-weight: 800;
 }
 
+.sitename:hover {
+	border-bottom: #241A18 .25vh solid;
+}
+
 /*header h1 {
 	margin-bottom: -2.5vh;
 	font-size: 1em;
