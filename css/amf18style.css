@@ -197,6 +197,17 @@ ul.top-navigation li a {
 	box-shadow: 0 8px 6px -6px #0a1a33;
 }
 
+.linkstotabs {
+	color: #241A18 !important;
+	font-size: 1.75vh;
+	padding: .5vh;
+	letter-spacing: .02vw;
+}
+
+.linkstotabs:hover {
+	cursor: default;
+}
+
 .sitename {
 	display: block;
 	margin-right: 3.5vw;
