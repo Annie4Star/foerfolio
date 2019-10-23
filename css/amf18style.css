@@ -43,11 +43,11 @@ a.navifix {
 }
 
 a.navifix:hover {
-	margin-bottom: -.25vh;
+	margin-bottom: -.5vh;
 	color: #a8612d;
 	background-color: #fffeab;
 	font-weight: 600;
-	border-bottom: #241A18 .25vh solid;
+	border-bottom: #241A18 .5vh solid;
 }
 
 a.outgoing {
