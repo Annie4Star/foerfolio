@@ -538,6 +538,28 @@ textarea:focus {
 	border: #a8612d solid 2px;
 }
 
+table {
+	display: block;
+	border-collapse: collapse;
+	margin: 0 auto;
+	font-size: 2vh;
+}
+
+th, td {
+	border: #241A18 solid .5vh;
+	padding: .75vh;
+}
+
+th {
+	background-color: #0a1a33;
+	color: #fffeab;
+}
+
+td {
+	background-color: #fff;
+	color: #000;
+}
+
 footer {
 	display: block;
 	box-sizing: inherit;
