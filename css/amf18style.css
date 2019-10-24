@@ -220,12 +220,6 @@ ul.top-navigation li a {
 	border-bottom: #241A18 .25vh solid;
 }
 
-/*header h1 {
-	margin-bottom: -2.5vh;
-	font-size: 1em;
-	letter-spacing: 2px;
-}*/
-
 h2, h3, h4, h5 {
 	font-family: 'Lato', 'Open Sans', 'Trebuchet MS', sans-serif !important;
 }
@@ -247,12 +241,6 @@ h2, h3, h4, h5 {
 	background: #fffeab;
 	border-radius: 15px;
 }
-
-/*.content p {
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-}*/
 
 .contentgrid {
 	display: grid;
@@ -558,6 +546,18 @@ th {
 td {
 	background-color: #fff;
 	color: #000;
+}
+
+.photome {
+	display: block;
+	float: left;
+	height: 100%;
+	max-width: 50%;
+	margin-right: 2vw;
+	color: #0a1a33;
+	font-size: 2vh;
+	font-style: italic;
+	text-align: center;
 }
 
 footer {
