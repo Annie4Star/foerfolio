@@ -229,14 +229,13 @@ h2, h3, h4, h5 {
 	box-sizing: inherit;
 	z-index: 2;
 	position: inherit;
-	top: 20vh;
+	top: 18vh;
 	left: 12.5%;
 	right: auto;
 	width: 65%;
-	min-height: calc(100% - 20%);
-	margin-bottom: 5vh;
+	min-height: calc(100% - 30%);
+	margin-bottom: 4vh;
 	padding: 8vh;
-	padding-bottom: 12.5vh;
 	overflow: unset;
 	background: #fffeab;
 	border-radius: 15px;
