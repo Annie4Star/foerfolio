@@ -70,13 +70,13 @@
 	
 	<p>Required information is marked with an asterisk &#40;*&#41;.</p>
 	
-	<form method="POST" enctype="text/plain" action="">
-		<label>First Name*</label> <input type="text" name="FirstName" required><br />
-		<label>Last Name*</label> <input type="text" name="LastName" required><br />
-		<label>Business or Company</label> <input type="text" name="businessname"><br />
-		<label>Email*</label> <input type="email" name="emailaddress" required><br />
-		<p><label>Message</label><br />
-			<textarea rows="10" cols="50" wrap="soft"></textarea>
+	<form id="contact_form" method="POST" action="">
+		<label for="first_name">First Name*</label> <input type="text" name="first_name" required><br />
+		<label for="last_name">Last Name*</label> <input type="text" name="last_name" required><br />
+		<label for="businessname">Business or Company</label> <input type="text" name="businessname"><br />
+		<label for="email">Email*</label> <input type="email" name="email" required><br />
+		<p><label for="message">Message</label><br />
+			<textarea rows="10" cols="50" wrap="soft" name="message"></textarea>
 		</p>
 		<p style="font-size:.85em;color:red;">No soliciting, please.  This contact form or the email account of the administrator are not to be used to sell web or app development, SEO ranking, or similar services.  Those contacting attempting to do so are in violation of this request and will be blacklisted.</p>
 		<p><input type="checkbox" name="nonsolicit" value="nosoliciting" required>I am using this contact form to contact the site admin, Ann-Marie Foerster, about a project or its status.  I am not contacting the site, as a developer, to sell services to the administrator.</p>
@@ -86,5 +86,35 @@
 </div> <!--content-->
 
 <footer>2018.  Site created by Ann-Marie Foerster.  <a href="mailto:annmarie.foerster@gmail.com">Contact</a> for design or consultant inquiries.</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="">
+$('#contact_form').submit(function('annmarie.foerster@gmail.com') {
+    e.preventDefault();
+    var first_name = $('#first_name').val();
+    var last_name = $('#last_name').val();
+    var email = $('#email').val();
+	var message  = $('#message').val();
+     
+    $(".error").remove();
+ 
+    if (first_name.length < 1) {
+      $('#first_name').after('<span class="error">This field is required</span>');
+    }
+    if (last_name.length < 1) {
+      $('#last_name').after('<span class="error">This field is required</span>');
+    }
+    if (email.length < 1) {
+      $('#email').after('<span class="error">This field is required</span>');
+    } else {
+      var regEx = /^[A-Z0-9][A-Z0-9._%+-]{0,63}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/;
+      var validEmail = regEx.test(email);
+      if (!validEmail) {
+        $('#email').after('<span class="error">Enter a valid email</span>');
+      }
+    }
+  });
+ 
+});
+</script>
 </body>
 </html>
