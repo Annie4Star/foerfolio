@@ -70,7 +70,7 @@
 	
 	<p>Required information is marked with an asterisk &#40;*&#41;.</p>
 	
-	<form id="contact_form" method="POST" action="">
+	<form id="contact_form" name="contact_form" method="POST" action="form-to-email.php">
 		<label for="first_name">First Name*</label> <input type="text" name="first_name"><br />
 		<label for="last_name">Last Name*</label> <input type="text" name="last_name"><br />
 		<label for="businessname">Business or Company</label> <input type="text" name="businessname"><br />
@@ -88,7 +88,7 @@
 <footer>2018.  Site created by Ann-Marie Foerster.  <a href="mailto:annmarie.foerster@gmail.com">Contact</a> for design or consultant inquiries.</footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript">
-$('#contact_form').submit(function('annmarie.foerster@gmail.com') {
+$('#contact_form').submit(function(e) {
     e.preventDefault();
     var first_name = $('#first_name').val();
     var last_name = $('#last_name').val();
