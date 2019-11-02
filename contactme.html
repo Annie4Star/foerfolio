@@ -113,7 +113,7 @@ $('#contact_form').submit(function(e) {
       }
     }
   });
- form.onsubmit = function(){success()};
+  document.getElementById("contact_form").onsubmit = function() {success()};
 
  function success() {
 	 alert("Thank you for contacting me.  I'll be with you shortly.");
