@@ -8,14 +8,37 @@
 <meta name="description" content="A Columbus, Ohio (OH) based web, graphic, social media design specialist- Web design and WordPress">
 <title>Ann-Marie Foerster - Web design and WordPress - Image editing, design, and more!</title>
 <link rel="stylesheet" type="text/css" href="css/amf18style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Lato|Roboto&display=swap');
 </style>
 </head>
 <body>
 <header>
-		<ul class="top-navigation">
-			<li class="sitename"><a href="index.html" title="Home Page">Ann-Marie Foerster</a></li>
+	<div class="respnavi">
+		<h1 class="sitename active"><a href="index.html" title="Home Page">Ann-Marie Foerster</a></h1>
+		<div id="mobilelinks">
+			<a href="print.html">Graphic Design</a>
+			<a href="imaging.html">Image Editing</a>
+			<a href="web.html">Web Design</a>
+			<a href="cgmodelnanim.html" class="navifix">3D Media</a>
+			<a href="videomotion.html" class="navifix">Video &#38; Motion</a>
+			<a href="resume.html">Online Resume</a>
+			<a href="about.html">About Me</a>
+			<a href="contactme.html">Contact Me</a>
+			<a href="termsservice.html">Service Policies</a>
+			<a href="privacy.html">Privacy</a>
+			<a href="https://www.behance.net/annmariefoerster" target="_blank" rel="noopener">Behance</a>
+			<a href="https://github.com/Annie4Star" target="_blank" rel="noopener">GitHub</a>
+			<a href="https://www.linkedin.com/in/annmariefoerster" target="_blank" rel="noopener">LinkedIn</a>
+		</div><!--mobilelinks-->
+		<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+		<a href="javascript:void(0);" class="icon" onclick="respFunction()">
+				<i class="fa fa-bars"></i>
+			  </a>
+	</div>
+	<ul class="top-navigation">
+		<li class="sitename"><a href="index.html" title="Home Page">Ann-Marie Foerster</a></li>
 		<li>
 			<div class="dropdown">
 				<button class="dropbtn">2D Media</button>
@@ -70,20 +93,225 @@
 	<p>This website is the result of around four years of platform exploration, growing skills, changing trends, and more.  I started the website a few different times.  Once on Adobe's defunct Muse program, another time hand coding, WordPress, and this iteration.  Before I was going with the refined, if aged, navy and tan color scheme.  However, I wanted to keep up with web trends and work with my latest CSS skills.</p>
 	<h3>The Inspiration</h3>
 	<p>I tend to take a lot of early evening strolls.  One such evening I took a picture of the sunset.  I thought I could get my site's color palette from this image.  I crystallized the photo in Photoshop, and grabbed the ones with the best contrast.</p>
+	<div class="imagerow">
+		<img src="images/websocial/Sunset1swatches.jpg" alt="First Image and their swatches" height="200vh">
+		<img src="images/websocial/color-source.jpg" alt="Sunset Color Source" height="200vh">
+		<img src="images/websocial/Sunset2wswatches.jpg" alt="The image I used" height="225vh">
+		<p>1. The first image I used for colors.  2. The source picture for the color palette.  3. The image I used, crystallized with its swatches.</p>
+	</div>
+	<ul class="enlarge">
+		<li>
+			<img src="images/websocial/Foerfolio-index9262019.jpg" alt="Ann-Marie Foerster Index" height="70">
+			<span>
+				<img src="images/websocial/Foerfolio-index9262019.jpg" alt="Ann-Marie Foerster Index" height="300">
+				<br>Ann-Marie Foerster Portfolio Site, Index - HTML and Responsive CSS in Visual Basic, June 2019 - Present
+			</span>
+		</li>
+		<li>
+			<img src="images/websocial/Foerfolio-3Dartexpand9262019.jpg" alt="Ann-Marie Foerster Expand Example" height="70">
+			<span>
+				<img src="images/websocial/Foerfolio-3Dartexpand9262019.jpg" alt="Ann-Marie Foerster Expand Example" height="300">
+				<br>Ann-Marie Foerster Portfolio Site, Image Expansion Example - HTML and Responsive CSS in Visual Basic, June 2019 - Present
+			</span>
+		</li>
+		<li>
+			<img src="images/websocial/Foerfolio-3Dartphysics9262019.jpg" alt="Ann-Marie Foerster 3D Physics Screenshot" height="70">
+			<span>
+				<img src="images/websocial/Foerfolio-3Dartphysics9262019.jpg" alt="Ann-Marie Foerster 3D Physic Screenshot" height="300">
+				<br>Ann-Marie Foerster Portfolio Site, 3D Physics Screenshot - HTML and Responsive CSS in Visual Basic, June 2019 - Present
+			</span>
+		</li>
+		<li>
+			<img src="images/websocial/Foerfolio-4Dart9262019.jpg" alt="Ann-Marie Foerster 4D" height="70">
+			<span>
+				<img src="images/websocial/Foerfolio-4Dart9262019.jpg" alt="Ann-Marie Foerster 4D" height="300">
+				<br>Ann-Marie Foerster Portfolio Site, Inserted Media in Video Page - HTML and Responsive CSS in Visual Basic, June 2019 - Present
+			</span>
+		</li>
+		<li>
+			<img src="images/websocial/Foerfolio-resume9262019.jpg" alt="Ann-Marie Foerster Resume Page" height="70">
+			<span>
+				<img src="images/websocial/Foerfolio-resume9262019.jpg" alt="Ann-Marie Foerster Resume Page" height="300">
+				<br>Ann-Marie Foerster Portfolio Site, Resume Page - HTML and Responsive CSS in Visual Basic, June 2019 - Present
+			</span>
+		</li>
+	</ul>
 	<h1><a href="https://akaneart.com/?utm_source=designportfolio" class="outgoing" target="_blank" rel="noopener">a-ka-neArt.com</a></h1>
 		<p class="info">2012 - Present; HTML, CSS3, jQuery, HTML-Kit, WordPress (Present)</p>
+		<p>This is my longest living live website.  I had it ready to go at the end of my web design class.  We were required to buy hosting for the class, and I kept it since 2011.</p>
+		<p>This website has seen a considerable amount of evolution over its long life.  The first two incarnations were full original HTML and CSS code.  There was some use of jQuery light box tools.  In 2015 I learned WordPress.  This website has been running it since.  I eventually turned it into a portfolio and e-commerce site with the use of Woocommerce.  Setup was easy with my experience at Conrads College Gifts.</p>
+		<ul class="enlarge">
+			<li>
+				<img src="images/websocial/2012snapshot.JPG" alt="2012 Snapshot" height="50">
+				<span>
+					<img src="images/websocial/2012snapshot.JPG" alt="2012 Snapshot" height="250">
+					<br>a-ka-neArt.com 2012, Snapshot - HTML and CSS, 2012
+				</span>
+			</li>
+			<li>
+				<img src="images/websocial/August2013snapshot.jpg" alt="August 2013 Snapshot" height="50">
+				<span>
+					<img src="images/websocial/August2013snapshot.jpg" alt="August 2013 Snapshot" height="250">
+					<br>a-ka-neArt.com August 2013 Snapshot - HTML and CSS, 2013
+				</span>
+			</li>
+			<li>
+				<img src="images/websocial/akaneart_homesummer14.jpg" alt="Summer 2014 Snapshot" height="50">
+				<span>
+					<img src="images/websocial/akaneart_homesummer14.jpg" alt="Summer 2014 Snapshot" height="250">
+					<br>a-ka-neArt.com Summer 2014 - HTML and CSS, 2012
+				</span>
+			</li>
+		</ul>
+		<ul class="enlarge">
+			<li>
+				<img src="images/websocial/Fall-2017-Snapshot-1024x489.jpg" alt="a-ka-neArt Fall 2017 Snapshot" height="50">
+				<span>
+					<img src="images/websocial/Fall-2017-Snapshot-1024x489.jpg" alt="a-ka-neArt Fall 2017 Snapshot" height="250">
+					<br>a-ka-neArt.com on WordPress, April 2018 Snapshot - WordPress and CSS, 2015 - Present
+				</span>
+			</li>
+			<li>
+				<img src="images/websocial/akaneart0418home.png" alt="a-ka-neArt April 2018 Snapshot" height="50">
+				<span>
+					<img src="images/websocial/akaneart0418home.png" alt="a-ka-neArt April 2018 Snapshot" height="275">
+					<br>a-ka-neArt.com on WordPress, Menu Snapshot - WordPress and CSS, 2015 - Present
+				</span>
+			</li>
+			<li>
+				<img src="images/websocial/akaneartmenu.JPG" alt="a-ka-neArt Menu" height="50">
+				<span>
+					<img src="images/websocial/akaneartmenu.jpg" alt="a-ka-neArt Menu" height="275">
+					<br>a-ka-neArt.com on WordPress, April 2018 Snapshot - WordPress and CSS, 2015 - Present
+				</span>
+			</li>
+			<li>
+				<img src="images/websocial/akaneart0418gallery.png" alt="a-ka-neArt April 2018 Gallery" height="50">
+				<span>
+					<img src="images/websocial/akaneart0418gallery.png" alt="a-ka-neArt April 2018 Gallery" height="275">
+					<br>a-ka-neArt.com on WordPress, April 2018 Gallery - WordPress and CSS, 2015 - Present
+				</span>
+			</li>
+			<li>
+				<img src="images/websocial/woocommcercemain.JPG" alt="a-ka-neArt Woocommerce Page" height="50">
+				<span>
+					<img src="images/websocial/woocommcercemain.JPG" alt="a-ka-neArt Woocommerce Page" height="275">
+					<br>a-ka-neArt.com on WordPress, Woocommerce Page - WordPress and CSS, 2015 - Present
+				</span>
+			</li>
+			<li>
+				<img src="images/websocial/woocommcercevari.JPG" alt="a-ka-neArt Woocommerce Variable Product" height="50">
+				<span>
+					<img src="images/websocial/woocommcercevari.JPG" alt="a-ka-neArt Woocommerce Variable Product" height="275">
+					<br>a-ka-neArt Woocommerce Variable Product - WordPress and CSS, 2015 - Present
+				</span>
+			</li>
+		</ul>
 	<h1>Conrads College Gifts</h1>
-		<p class="info">2015 - Present; HTML, CSS3, Drupal, WAMP</p>
+		<p class="info">2015 - Present; HTML, CSS3, Drupal 7 Commerce, WAMP</p>
+		<p>The website to Conrads College Gifts was my first large scale website.  The original site was using an outdated platform that was prone to errors.  The webmaster decided on Drupal, working with Drupal 7 commerce.</p>
+		<p>I was able to install Drupal locally on my computer in order to work offline.  My main duties were page and theme styling.  The images and textures were carried over from a previous setup of the website.  This website was my first experience with true responsive design.</p>
+		<ul class="enlarge">
+			<li>
+				<img src="images/websocial/conradsheader.JPG" alt="Conrads College Gifts Header" height="75">
+				<span>
+					<img src="images/websocial/conradsheader.JPG" alt="Conrads College Gifts Header" height="300">
+					<br>Conrads College Gifts Header - HTML, CSS, and Drupal 7, 2015-2016
+				</span>
+			</li>
+			<li>
+				<img src="images/websocial/conradsitemexample.JPG" alt="Conrads College Gifts Item Page" height="75">
+				<span>
+					<img src="images/websocial/conradsitemexample.JPG" alt="Conrads College Gifts Item Page" height="300">
+					<br>Conrads College Gifts Item Page - HTML, CSS, and Drupal 7, 2015-2016
+				</span>
+			</li>
+			<li>
+				<img src="images/websocial/Conradsmobilehours.JPG" alt="Conrads College Gifts Mobile Page Hours" height="75">
+				<span>
+					<img src="images/websocial/Conradsmobilehours.JPG" alt="Conrads College Mobile Page Hours" height="400">
+					<br>Conrads College Gifts Mobile Page Hours - HTML, CSS, and Drupal 7, 2015-2016
+				</span>
+			</li>
+		</ul>
+		<img src="images/websocial/July-4th-Hours-Banner.jpg" alt="Conrads College Gifts July 4th Weekend Hours Banner" class="center">
+		<p>Conrads College Gifts July 4th Hours Banner - Photoshop, July 2019</p>
+				
 	<h1>Greyroamer Photography</h1>
 		<p class="info">2012 - 2013; HTML, CSS3, JuiceboxBuilder, HTML-Kit</p>
+		<p>I made this for a friend of mine.  He wanted a web presence off of Wix.  The biggest challenge was finding a functioning light box that he wanted.  I found a freemium tool called JuiceboxBuilder which we both agreed was the best app to use.  I plan on making these pages again with new business plans.</p>
+		<ul class="enlarge">
+			<li>
+				<img src="images/websocial/greyroamer_home.jpg" alt="Greyroamer Home Page" height="75">
+				<span>
+					<img src="images/websocial/greyroamer_home.jpg" alt="Greyroamer Home Page" height="300">
+					<br>Greyroamer Photography Portfolio, Home Page - HTML and CSS 2012
+				</span>
+			</li>
+			<li>
+				<img src="images/websocial/greyroamer_fashion.jpg" alt="Greyroamer Fashion Photography Page" height="75">
+				<span>
+					<img src="images/websocial/greyroamer_fashion.jpg" alt="Greyroamer Photography Page" height="300">
+					<br>Greyroamer Photography Portfolio, Fashion Photography - HTML and CSS 2012
+				</span>
+			</li>
+			<li>
+				<img src="images/websocial/greyroamer_about.png" alt="Greyroamer About Page" height="75">
+				<span>
+					<img src="images/websocial/greyroamer_about.png" alt="Greyroamer About Page" height="300">
+					<br>Greyroamer Photography Portfolio, About Page - HTML and CSS 2012
+				</span>
+			</li>
+		</ul>
 	<h1>Filingo's Wine Jelly</h1>
 		<p class="info">2013 - 2015; HTML, CSS3, HTML-Kit</p>
-	<h1>Filingo's Wine Jelly 2.0</h1>
+		<p>Filingo's Wine Jelly is a cottage industry business my mother was running.  Creating some branding and this website was my first project out of college.  My mother sat in on some of my coding sessions, and provided feedback on what she wanted on the project.  The website was never used, but I kept the files for later use.</p>
+		<ul class="enlarge">
+			<li>
+				<img src="images/websocial/filingoshome.png" alt="Filingo's Wine Jelly Home" height="50">
+				<span>
+					<img src="images/websocial/filingoshome.png" alt="Filingo's Wine Jelly Home" height="250">
+					<br>Filingo's Wine Jelly, Home Page - HTML and CSS, Fall 2014
+				</span>
+			</li>
+			<li>
+				<img src="images/websocial/filingosproducts.png" alt="Filingo's Wine Jelly Products" height="50">
+				<span>
+					<img src="images/websocial/filingosproducts.png" alt="Filingo's Wine Jelly Products" height="250">
+					<br>Filingo's Wine Jelly, Products Page - HTML and CSS, Fall 2014
+				</span>
+			</li>
+			<li>
+				<img src="images/websocial/filingoslocal1.jpg" alt="Filingo's Wine Jelly Local Information" height="50">
+				<span>
+					<img src="images/websocial/filingoslocal1.jpg" alt="Filingo's Wine Jelly Local Information" height="250">
+					<br>Filingo's Wine Jelly, Local Information Page - HTML and CSS, Fall 2014
+				</span>
+			</li>
+			<li>
+				<img src="images/websocial/filingoscontact.jpg" alt="Filingo's Wine Jelly Home" height="50">
+				<span>
+					<img src="images/websocial/filingoscontact.jpg" alt="Filingo's Wine Jelly Home" height="250">
+					<br>Filingo's Wine Jelly, Contact Page - HTML and CSS, Fall 2014
+				</span>
+			</li>
+		</ul>
+	<!--<h1>Filingo's Wine Jelly 2.0</h1>
 		<p class="info">2017 - Present; HTML, CSS3, WordPress</p>
 		<p>My mother took some time away from her business to focus on other projects and preparing for retirement.  However, she has a desire to reopen.</p>
+		<p>Coming soon!</p>-->
+	<p>My mother anticipates reviving the business soon.  A new e-commerce capable website is in the works, and much of the branding is in progress.</p>
 </div> <!--content-->
-
-<footer>2018.  Site created by Ann-Marie Foerster.  <a href="mailto:annmarie.foerster@gmail.com">Contact</a> for design or consultant inquiries.</footer>
-
+<footer>2019.  Site created by Ann-Marie Foerster.  <a href="mailto:annmarie.foerster@gmail.com">Contact me</a> for design inquiries.</footer>
+<script>
+		function respFunction() {
+		  var x = document.getElementById("mobilelinks");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+		  }
+		}
+		</script>
 </body>
 </html>
