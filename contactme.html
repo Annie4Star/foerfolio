@@ -106,7 +106,7 @@
 		<p><input type="checkbox" name="nonsolicit" value="nosolicit" required></p>
 		<p><input type="submit" value="Submit"></p>
 	</form>
-<p>If the contact form is not working you may <a href="mailto:annmarie.foerster@gmail.com?subject=Portfolio%20Inquiry">email me</a> directly.</p>
+<p>If the contact form is not working you may email me.  An email client may need to be set up on your computer.</p>
 <script type="text/javascript">
 emailE='annmariefoerster.com'
 emailE=('admin' + '@' + emailE)
@@ -114,7 +114,11 @@ document.write('<a href="mailto:' + emailE + '">' + 'Email me directly.' + '</a>
 </script>
 </div> <!--content-->
 
-<footer>2019.  Site created by Ann-Marie Foerster.  <a href="mailto:annmarie.foerster@gmail.com">Contact me</a> for design inquiries.</footer>
+<footer>2019.  Site created by Ann-Marie Foerster.  <script type="text/javascript">
+	emailE='annmariefoerster.com'
+	emailE=('admin' + '@' + emailE)
+	document.write('<a href="mailto:' + emailE + '">' + 'Contact me' + '</a>')
+	</script> for design inquiries.</footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript">
 $('#contact_form').submit(function(e) {
