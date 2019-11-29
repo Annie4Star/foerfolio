@@ -93,7 +93,7 @@
 	
 	<p>Required information is marked with an asterisk &#40;*&#41;.</p>
 	
-	<form id="contact_form" name="contact_form" method="POST" action="form-to-email.php">
+	<form id="contact_form" name="contact_form" action="form-to-email.php" method="POST" onsubmit="clear">
 		<p><label for="first_name">First Name*</label> <input type="text" name="first_name"><br />
 		<label for="last_name">Last Name*</label> <input type="text" name="last_name"><br />
 		<label for="businessname">Company</label> <input type="text" name="businessname"><br />
@@ -104,7 +104,7 @@
 		<p style="font-size:.85em;color:red;">No soliciting, please.  This contact form or the email account of the administrator are not to be used to sell web or app development, SEO ranking, or similar services.  Those contacting attempting to do so are in violation of this request and will be blacklisted.</p>
 		<p>I am using this contact form to contact the site admin, Ann-Marie Foerster, about a project or its status.  I am not contacting the site, as a developer, to sell services to the administrator.</p>
 		<p><input type="checkbox" name="nonsolicit" value="nosolicit" required></p>
-		<p><input type="submit" value="Submit"></p>
+		<p><input type="submit" name="send" value="Submit"></p>
 	</form>
 <p>If the contact form is not working you may email me.  An email client may need to be set up on your computer.</p>
 <script type="text/javascript">
@@ -114,11 +114,11 @@ document.write('<a href="mailto:' + emailE + '">' + 'Email me directly.' + '</a>
 </script>
 </div> <!--content-->
 
-<footer>2019.  Site created by Ann-Marie Foerster.  <script type="text/javascript">
+<footer onload="mailfooter"><script type="text/javascript">
 	emailE='annmariefoerster.com'
 	emailE=('admin' + '@' + emailE)
-	document.write('<a href="mailto:' + emailE + '">' + 'Contact me' + '</a>')
-	</script> for design inquiries.</footer>
+	document.write('2019.  Site created by Ann-Marie Foerster.  ' + '<a href="mailto:' + emailE + '">' + 'Contact me' + '</a>' + ' for design inquiries.')
+	</script></footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript">
 $('#contact_form').submit(function(e) {
