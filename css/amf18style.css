@@ -420,6 +420,7 @@ img + p {
 color: #0a1a33;
 font-style: italic;
 font-size: 11px;
+text-align: center;
 }
 
 .imagerow {
@@ -660,6 +661,16 @@ right: auto;
 padding: 1.5vw;
 }
 
+.contentgrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  grid-gap: 1vw;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5vh;
+  }
+
 img + p {
 font-size: 5vh;
 }
@@ -699,8 +710,8 @@ border: none;
 .respnavi {
 display: block;
 overflow: hidden;
- background-color: #a8612d;
- position: relative;
+background-color: #a8612d;
+position: relative;
 }
 
 .respnavi #mobilelinks {
@@ -709,10 +720,10 @@ display: none;
 
 .respnavi a {
 color: #fffeab;
-  padding: 1.5vh 2.5vw;
- text-decoration: none;
-  font-size: 3.333vh;
- display: block;
+padding: 1.5vh 2.5vw;
+text-decoration: none;
+font-size: 3.333vh;
+display: block;
 }
 
 .respnavi a.icon {
@@ -730,7 +741,7 @@ color: #fffeab;
 
 .active {
 background-color: #a8612d;
-  color: white;
+color: white;
 }
 
 .content {
@@ -738,13 +749,23 @@ display: block;
 position: inherit;
 float: none;
 height: max-content;
-width: 80%;
+width: 85%;
 top: 15vh;
-margin-bottom:1vh;
-left: 2%;
+margin-bottom:.5vh;
+left: 5%;
 right: auto;
-padding: 1.5vw;
+padding: 2vw;
 }
+
+.contentgrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  grid-gap: 1vw;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: .5vh;
+  }
 
 .navihoverbox img{
 display: block;
@@ -769,9 +790,9 @@ ul.enlarge span {
 display: none;
 }
 
-    form p:first-of-type {
-  white-space: nowrap;
-  }
+form p:first-of-type {
+white-space: nowrap;
+}
 
 input[type=text], [type=email] {
 -ms-transform: scale(1); /* IE */
@@ -819,7 +840,7 @@ font-size: 5vh;
 }
 }
 
-@media  screen and (max-width: 1080px) {
+@media screen and (min-width: 641px) and (max-width: 1080px) {
 body {
 max-height: 100%;
 }
@@ -867,10 +888,10 @@ display: none;
 
 .respnavi a {
 color: #fffeab;
-  padding: 1.5vh 2.5vw;
- text-decoration: none;
-  font-size: 3.333vh;
- display: block;
+padding: 1.5vh 2.5vw;
+text-decoration: none;
+font-size: 3.333vh;
+display: block;
 }
 
 .respnavi a.icon {
@@ -918,7 +939,7 @@ margin-bottom: 4vh;
   max-width: 50%;
 }
 
-  ul.enlarge li {
+ul.enlarge li {
 margin: .5vh;
 
 }
@@ -978,7 +999,7 @@ br {
 margin: 1vh;
 }
 
-  textarea {
+textarea {
 display: block;
 -ms-transform: scale(1.5); /* IE */
 -moz-transform: scale(1.5); /* FF */
@@ -1010,4 +1031,4 @@ footer {
 font-size: 2vh;
 }
 
-  }
+}
