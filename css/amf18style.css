@@ -213,12 +213,12 @@ margin-right: 3.5vw;
 .sitename a {
 font-family: 'Cormorant Garamond', serif;
 font-size: 5vh;
-font-weight: 400;
+font-weight: normal;
 }
 
 .sitename a:hover {
 text-decoration: none;
-font-weight: 600;
+font-weight: bold;
 }
 
 h1, h2, h3, h4, h5 {
@@ -244,7 +244,7 @@ border-radius: 15px;
 
 .contentgrid {
 display: grid;
-grid-template-columns: 33% 33% 33%;
+grid-template-columns: 32% 32% 33%;
 grid-template-rows: auto auto auto;
 grid-gap: 1vw;
 text-align: center;
@@ -524,6 +524,10 @@ text-align: left;
 input, textarea {
 border: #241A18 solid 1px;
 margin-bottom: 2vh;
+}
+
+input {
+  border-radius: 5%;
 }
 
 input:focus {
@@ -1031,4 +1035,42 @@ footer {
 font-size: 2vh;
 }
 
+}
+
+@media print {
+  body {
+    color: black;
+    background: white;
+    padding: 5%;
+  }
+
+  .respnavi h1 {
+    color: black;
+    border: none;
+    margin-left: 1vw;
+  }
+
+  header {
+    border: none;
+    margin-bottom: 2vh;
+  }
+
+  .respnavi:first-child {
+    display: block;
+  }
+  
+  #mobilelinks, ul.top-navigation {
+    display: none;
+  }
+
+  .content {
+    width: 90%;
+    padding-top: 2vh;
+    left: 0;
+    margin-bottom: 0;
+  }
+
+ footer {
+   display: none;
+ } 
 }

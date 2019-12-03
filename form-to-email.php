@@ -13,31 +13,30 @@ $message = $_POST['message'];
 $submit = $_POST['submit'];
 }
 
-//Validate first
-//if(empty($first_name)||empty($last_name)||empty($email)) 
-//{
-//    echo "First and last name and email are mandatory!";
-//    exit;
-//}
+Validate first
+if(empty($first_name)||empty($last_name)||empty($email)) 
+{
+    echo "First and last name and email are mandatory!";
+    exit;
+}
 
-//if(IsInjected($email))
-//{
-//    echo "Bad email value!";
-//    exit;
-//}
+if(IsInjected($email))
+{
+    echo "Bad email value!";
+    exit;
+}
 
-{$email_from = 'admin@annmariefoerster.com';//<== update the email address
+{$email_from = 'admin@annmariefoerster.com';
 $subject = "New Form submission";
 $email_body = "You have received a new message from $first_name at $email.\n".
     "Here is the message:\n $message".
     
-$to = "admin@annmariefoerster.com";//<== update the email address
+$to = "admin@annmariefoerster.com";
+mail( $to,$subject,$body,$headers);
 $headers = "From: $email \r\n";
 $headers .= "Reply-To: $email \r\n";
-//Send the email!
-mail( $to,$subject,$body,$headers);
 //done. redirect to thank-you page.
-header('Location: thank-you.html');
+header('Location: contactme.html');
 }
 
 // Function to validate against any email injection attempts
