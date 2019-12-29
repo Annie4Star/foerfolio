@@ -47,7 +47,6 @@ margin-bottom: -.5vh;
 color: #a8612d;
 background-color: #fffeab;
 font-weight: 600;
-border-bottom: #241A18 .5vh solid;
 }
 
 a.outgoing {
@@ -105,7 +104,6 @@ color: #fffeab;
 background-color: #a8612d;
 font-family: 'Lato', sans-serif;
 font-size: 18px;
-padding-left: .23vw;
 z-index: 4;
 border-bottom: 1vh solid #241A18;
 }
@@ -213,12 +211,17 @@ margin-right: 3.5vw;
 .sitename a {
 font-family: 'Cormorant Garamond', serif;
 font-size: 5vh;
-font-weight: normal;
 }
 
 .sitename a:hover {
 text-decoration: none;
-font-weight: bold;
+}
+
+.tagline {
+  display: block;
+  margin: -2vh 0 1vh 3.15vw;
+  font-size: 1.75vh;
+  font-weight: 100;
 }
 
 h1, h2, h3, h4, h5 {
@@ -244,12 +247,11 @@ border-radius: 15px;
 
 .contentgrid {
 display: grid;
-grid-template-columns: 32% 32% 33%;
+grid-template-columns: 32% 32% 32%;
 grid-template-rows: auto auto auto;
 grid-gap: 1vw;
 text-align: center;
 margin: 0 auto;
-margin-bottom: 5vh;
 }
 
 .navihoverbox,
@@ -681,7 +683,11 @@ font-size: 5vh;
 }
 
 @media screen and (max-width: 640px) {
-header{
+body {
+  font-size: 3vh;
+}
+
+  header{
 display:block;
 padding: 0 ;
 max-height: fit-content;
@@ -754,8 +760,8 @@ position: inherit;
 float: none;
 height: max-content;
 width: 85%;
-top: 15vh;
 margin-bottom:.5vh;
+top: 15vh;
 left: 5%;
 right: auto;
 padding: 2vw;
@@ -783,11 +789,11 @@ height: auto;
 }
 
 ul.enlarge img {
-margin: .33vh;
-height: 15vh;
-}
-ul.enlarge img {
-padding: 0px;
+margin-left: -15%;
+margin-right: 0 auto;
+max-width: 100%;
+height: auto;
+padding: 0;
 }
 
 ul.enlarge span {
@@ -840,8 +846,33 @@ margin-left: 4.75vw;
 }
 
 img + p {
-font-size: 5vh;
+font-size: 3vh;
 }
+
+.listcol {
+  -webkit-columns: .45vw 2;
+  -moz-columns: .45vw 2;
+  columns: .45vw 2;
+  -webkit-column-gap: .05vw;
+  -moz-column-gap: .05vw;
+  column-gap: .05vw;
+  column-fill: balance;
+  -moz-column-fill: balance;
+  -webkit-column-fill: balance;
+  }
+  
+  .listcol ul {
+  -webkit-column-span: none;
+  -moz-column-span: none;
+  column-span: none;
+  margin-top: -.15rem;
+  line-height: 1.65rem;
+  }
+
+  iframe {
+    width: 75%;
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 641px) and (max-width: 1080px) {
