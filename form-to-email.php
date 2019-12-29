@@ -29,7 +29,7 @@ if(IsInjected($email))
 {$email_from = 'admin@annmariefoerster.com';
 $subject = "New Form submission";
 $email_body = "You have received a new message from $first_name at $email.\n".
-    "Here is the message:\n $message".
+    "Here is the message:\n $message";
     
 $to = "admin@annmariefoerster.com";
 mail( $to,$subject,$body,$headers);
