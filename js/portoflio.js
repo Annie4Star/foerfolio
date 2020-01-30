@@ -1,16 +1,17 @@
 var d = new Date();
 
+document.getElementById('year').innerHTML = d.getFullYear();
+
 var outgoing = coverMail();
 
 function coverMail() {
-    emailE='annmariefoerster.com'
+  emailE='annmariefoerster.com'
 	emailE=('admin' + '@' + emailE)
 }
 
-document.getElementById("theFooter").innerHTML = d.getFullYear() + "  The site is by Ann-Marie Foerster.  " + '<a itemprop="url" href="mailto:' + emailE + '">' + 'Contact me' + '</a>' + " for design inquiries.";
-
-document.getElementById("backupContact").innerHTML = '<a itemprop="url" href="mailto:' + emailE + '">' + "Send me a direct email!" + '</a>';
-
+var span = document.getElementByClass('noshow');
+span.insertAdjacentHTML = ('afterbegin', '<a href="mailto:'+ outgoing +'">');
+span.insertAdjacentHTML = ('beforeend', '</a>');
 
 function respFunction() {
     var x = document.getElementById("mobilelinks");
