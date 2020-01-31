@@ -96,8 +96,11 @@ width: .5rem;
 
 body::-webkit-scrollbar-thumb {
 background-color: var(--color-plum);
-border-radius: 10px;
 outline: 1px solid var(--color-plum);
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--color-smoothie);
 }
 
 header {
