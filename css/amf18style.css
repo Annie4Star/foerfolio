@@ -34,19 +34,6 @@ h1 a {
   color: var(--color-plum);
   }
   
-a.navifix {
-  display: inline-block;
-  min-width: 4rem;
-  padding: .3em;
-  }
-  
-a.navifix:hover {
-  margin-bottom: -.5rem;
-  color: #a8612d;
-  background-color: #fffeab;
-  font-weight: 600;
-  }
-  
 .topnavigation a {
     display: inline-block;
     color: var(--color-burntorange);
@@ -518,7 +505,7 @@ display: none;
 }
 
 .respnavi a {
-color: #fffeab;
+color: var(--color-burntorange);
 padding: 1.5rem 2.5rem;
 text-decoration: none;
 font-size: 3.333rem;
@@ -526,7 +513,7 @@ display: block;
 }
 
 .respnavi a.icon {
-background: #241A18;
+background: var(--color-plum);
 display: block;
 position: absolute;
 right: 3rem;
@@ -534,12 +521,14 @@ top: 1rem;
   }
 
 .respnavi a:hover {
-background-color: #0a1a33;
-color: #fffeab;
+background-color: ;
+color: var(--color-burntorange);
 }
 
+.topnavigation, .desktophome {display: none;}
+
 .active {
-background-color: #a8612d;
+background-color: var(--color-burntorange);
   color: white;
 }
 
@@ -550,12 +539,23 @@ float: none;
 height: max-content;
 width: 95%;
 top: 20rem;
-margin-bottom:1rem;
-left: 3%;
-right: auto;
 padding: 1.5rem;
 }
 
+.examples {display: none;}
+
+.resumecol {
+  -webkit-columns: 3rem 1;
+  -moz-columns: 3rem 1;
+  columns: 3rem 1;
+  -webkit-column-gap: 0.125em;
+  -moz-column-gap: 0.125em;
+  column-gap: 0.125em;
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
+  }
+
+  .imagerow img {width: 50%;}
 }
 
 @media screen and (max-width: 640px) {
@@ -566,10 +566,12 @@ body {
 header {
 display:block;
 padding: 1rem ;
-max-height: fit-content;
+height: 6.5rem;
 line-height: .75rem;
 border-bottom: none;
 }
+
+.topnavigation, .desktophome {display: none;}
 
 h1, h2, h3, h4, h5 {
 display: block;
@@ -592,7 +594,6 @@ border: none;
 .respnavi {
 display: block;
 overflow: hidden;
-background-color: #a8612d;
 position: relative;
 }
 
@@ -601,29 +602,27 @@ display: none;
 }
 
 .respnavi a {
-color: #fffeab;
-padding: 1.5rem 2.5rem;
+color: var(--color-burntorange);
+padding: 0.5rem 0.5rem;
 text-decoration: none;
-font-size: 3.333rem;
+font-size: 1.5rem;
 display: block;
+z-index: 2;
+background-color: var(--color-white);
 }
 
 .respnavi a.icon {
-background: #241A18;
+background: var(--color-burntorange);
 display: block;
 position: absolute;
-right: 3rem;
-top: 1rem;
+right: 0.25rem;
+top: 0.25rem;
+z-index: 1;
   }
 
 .respnavi a:hover {
-background-color: #0a1a33;
-color: #fffeab;
-}
-
-.active {
-background-color: #a8612d;
-color: white;
+background-color: var(--color-plum);
+color: var(--color-smoothie);
 }
 
 .content {
@@ -632,14 +631,15 @@ position: inherit;
 float: none;
 height: max-content;
 width: 100%;
-margin-bottom:.5rem;
 padding: 2rem;
 }
 
+.examples {display: none;}
+
 .listcol {
-  -webkit-columns: .45rem 2;
-  -moz-columns: .45rem 2;
-  columns: .45rem 2;
+  -webkit-columns: 6rem 1;
+  -moz-columns: 6rem 1;
+  columns: 6rem 1;
   -webkit-column-gap: .05rem;
   -moz-column-gap: .05rem;
   column-gap: .05rem;
@@ -655,28 +655,38 @@ padding: 2rem;
   margin-top: -.15rem;
   line-height: 1.65rem;
   }
-
+  .resumecol {
+    -webkit-columns: 3.5rem 1;
+    -moz-columns: 3.5rem 1;
+    columns: 3.5rem 1;
+    -webkit-column-gap: 0.25em;
+    -moz-column-gap: 0.25em;
+    column-gap: 0.25em;
+    -webkit-column-break-inside: avoid;
+    break-inside: avoid;
+    }
   ::placeholder {
     font-size: 1rem;
   }
+
+  .imagerow img {width: 80%;}
 }
 
 @media screen and (min-width: 641px) and (max-width: 1080px) {
 body {
 max-height: 100%;
+font-size: 1.5rem;
 }
 
 header{
 display:block;
 padding: 0.5rem 2rem ;
-max-height: fit-content;
+height: 10rem;
 line-height: .75rem;
 border-bottom: none;
 }
 
-ul.top-navigation {
-display: none;
-}
+.topnavigation, .desktophome {display: none;}
 
 h1, h2, h3, h4, h5 {
 display: block;
@@ -684,22 +694,10 @@ line-height: initial;
 white-space: normal;
 }
 
-.sitename {
-display: inline-block;
-margin-left: 3rem;
-line-height: inherit;
-border: none;
-}
-
-.sitename:hover {
-display: inline-block;
-border: none;
-}
-
 .respnavi {
 display: block;
 overflow: hidden;
- background-color: #a8612d;
+ background-color: var(--color-white);
  position: relative;
 }
 
@@ -708,29 +706,25 @@ display: none;
 }
 
 .respnavi a {
-color: #fffeab;
-padding: 1.5rem 2.5rem;
+color: var(--color-burntorange);
+padding: 2rem 2.5rem;
 text-decoration: none;
 font-size: 3.333rem;
 display: block;
+background-color: var(--color-white);
 }
 
 .respnavi a.icon {
-background: #241A18;
+background: var(--color-plum);
 display: block;
 position: absolute;
-right: 3rem;
+right: 1rem;
 top: 1rem;
   }
 
 .respnavi a:hover {
-background-color: #0a1a33;
-color: #fffeab;
-}
-
-.active {
-background-color: #a8612d;
-  color: white;
+background-color: var(--color-plum);
+color: var(--color-smoothie);
 }
 
 .content {
@@ -742,26 +736,17 @@ width: 100%;
 padding: 4rem;
 }
 
-.contentgrid {
-display: grid;
-grid-template-columns: 33% 33% 33%;
-grid-template-rows: auto auto auto;
-grid-gap: 2%;
-margin: 0 auto;
-margin-bottom: 4rem;
-}
-
 .resname {
 line-height: normal;
 }
 
 .listcol {
--webkit-columns: .5rem 2;
--moz-columns: .5rem 2;
-columns: .5rem 2;
--webkit-column-gap: .05rem;
--moz-column-gap: .05rem;
-column-gap: .05rem;
+-webkit-columns: 45% 2;
+-moz-columns: 45% 2;
+columns: 45% 2;
+-webkit-column-gap: .5rem;
+-moz-column-gap: .5rem;
+column-gap: .5rem;
 column-fill: balance;
 -moz-column-fill: balance;
 -webkit-column-fill: balance;
