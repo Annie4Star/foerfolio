@@ -33,8 +33,9 @@
 </head>
 <body>
 	<header>
+		<nav>
 		<div class="respnavi">
-			<h1><a itemprop="url" href="index.html" title="Home Page">Ann-Marie Foerster</a></h1>
+			<h1><a itemprop="url" href="index.html" title="Home Page" itemscope itemType="http://schema.org/Person">Ann-Marie Foerster</a></h1>
 			<div id="mobilelinks">
 				<a itemprop="url" href="work.html">Work</a>
 				<a itemprop="url" href="resume.html">Resume</a>
@@ -49,7 +50,7 @@
 					<i class="fa fa-bars"></i>
 				  </a>
 		</div>
-		<h1><a itemprop="url" href="index.html" class="desktophome left" title="Home Page">Ann-Marie Foerster</a></h1>
+		<h1><a itemprop="url" href="index.html" class="desktophome left" title="Home Page" itemscope itemType="http://schema.org/Person">Ann-Marie Foerster</a></h1>
 			<div class="topnavigation right">
 				<a itemprop="url" href="work.html" class="alignheader">Work</a>
 				<a itemprop="url" href="resume.html" class="alignheader">Resume</a>
@@ -65,14 +66,15 @@
 						</div> <!--dropdown-content-->
 					</div> <!--dropdown-->
 			</div>
+		</nav>
 	</header>
-
+<main>
 <div class="content">
-	<div class="resname">Ann-Marie Foerster</div>
+	<div class="resname" itemscope itemType="http://schema.org/Person">Ann-Marie Foerster</div>
 	<p><a itemprop="url" href="Ann-MarieFoerster_Resume.pdf" target="_blank" rel="noopener" title="Downloadable resume PDF">Download a printable PDF</a></p>
 	<p>I am a multi-disciplinary visual media designer.  My personal focus is on web, print, and image editing.</p>
 </div>
-<div class="content plumbg">
+<section id="ResumeSkills" class="content plumbg">
 	<h2>Skills</h2>
 		<div class="resumecol">
 			<ul>
@@ -129,8 +131,8 @@
 				<li>Sound editing and repair</li>
 			</ul>
 		</div> <!--resumecol-->
-</div>
-<div class="content smoothiebg">
+</section>
+<section id="ResumeExperience" class="content smoothiebg">
 	<h2>Experience</h2>
 	<h3>Designer, Image Editor - August 2017 to December 2019</h3>
 	<h3>Design Intern - May 2015 to November 2016</h3>
@@ -173,15 +175,15 @@
 		<li>Assisted with the editing of photos and adding effects.</li>
 		<li>Developed a website for the photographer to move off of Wix.</li>
 	</ul>
-</div>
-<div class="content plumbg">
+</section>
+<section id="ResumeEducation" class="content plumbg">
 	<h2>Education</h2>
 	<h3>The Ohio State University</h3>
 	<p class="bold">September 2009 to December 2013</p>
 	<p class="bold">Bachelor's of Fine Arts in Art &amp; Technology, Minor in Film Studies</p class="bold">
 	<p>A fine arts program in art and technology.  Learned art and design fundamentals as well as color theory, photography, image & video editing, 3D modeling and animation, and web design.  Primary programs used were Adobe Creative Suite, Maya, Cinema4D, and Apple programs.  Complimentary minor in Film Studies, focusing on international cinema and portrayal of special groups.
-	</p></div>
-<div class="content smoothiebg">
+	</p></section>
+<section id="RelevantInterests" class="content smoothiebg">
 	<h2>Relevant Interests</h2>
 	<ul class="listcol">
 		<li>Art and illustration</li>
@@ -199,7 +201,8 @@
 		<li>Figure assembly</li>
 		<li>Gaming</li>
 	</ul>
-</div>
+</section>
+</main>
 <footer>
 	Made by <span ID="NameObfuse"></span>
 	<div class="right">

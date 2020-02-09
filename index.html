@@ -30,8 +30,9 @@
 </head>
 <body>
 <header>
+	<nav>
 	<div class="respnavi">
-		<h1><a itemprop="url" href="index.html" title="Home Page">Ann-Marie Foerster</a></h1>
+		<h1><a itemprop="url" href="index.html" title="Home Page" itemscope itemType="http://schema.org/Person">Ann-Marie Foerster</a></h1>
 		<div id="mobilelinks">
 			<a itemprop="url" href="work.html">Work</a>
 			<a itemprop="url" href="resume.html">Resume</a>
@@ -46,7 +47,7 @@
 				<i class="fa fa-bars"></i>
 			  </a>
 	</div>
-	<h1><a itemprop="url" href="index.html" class="desktophome left" title="Home Page">Ann-Marie Foerster</a></h1>
+	<h1><a itemprop="url" href="index.html" class="desktophome left" title="Home Page" itemscope itemType="http://schema.org/Person">Ann-Marie Foerster</a></h1>
 		<div class="topnavigation right">
 			<a itemprop="url" href="work.html" class="alignheader">Work</a>
 			<a itemprop="url" href="resume.html" class="alignheader">Resume</a>
@@ -62,16 +63,17 @@
 					</div> <!--dropdown-content-->
 				</div> <!--dropdown-->
 		</div>
+	</nav>
 </header>
-
-<div class="content plumbg">
+<main>
+<section id="introduction" class="content plumbg">
 	<h2>Who am I?</h2>
-	<p>I am a Columbus, Ohio based designer and denizen of the internet.</p>
+	<p>I am a <span itemscope itemType="http://schema.org/availableAtOrFrom">Columbus, Ohio</span> based designer and denizen of the internet.</p>
 	<p>My first dive into digital design was with an HTML book that referenced diskettes.  I kept going with CSS, installing jQuery, and using WordPress.</p>
 	<p>I take an accessibility and legibility first approach to my work.  I like high contrast and experimenting with fonts.</p>
 	<p>I see myself as a constant pupil, and I am always looking up new techniques or taking online courses.  My other interests are foreign languages, film, gaming, and streaming.</p>
-</div>
-<div class="content smoothiebg">
+</section>
+<section id="ExampleWork" class="content smoothiebg">
 	<h2>What do I have to Offer?</h2>
 	<ul class=left>
 		<li>Wireframing</li>
@@ -97,8 +99,8 @@
 	<div class="clear"></div>
 	<p class="ctaline">Check out my previous work and passion projects.</p>
 	<a href="work.html"><button>Previous Work</button></a>
-</div>
-<div class="content plumbg">
+</section>
+<section id="skills" class="content plumbg">
 	<div class=" examples">
 		<img src="images/photoandedit/tophat-main.jpg" alt="Glass Top Hat Product Photo" class="left tophathome">
 	</div>
@@ -128,13 +130,13 @@
 	</div>
 	<p class="ctaline">See all of my applicable skills and employment history.</p>
 	<a href="resume.html"><button>My Resume</button></a>
-</div>
-<div class="content smoothiebg">
+</section>
+<section id="statuscontact" class="content smoothiebg">
 	<h2>What am I up to?</h2>
 	<p>I am currently open for design or image editing projects big and small.</p>
 	<p class="ctaline">Let's create something together!</p>
 	<a href="contactme.html"><button>Contact Me</button></a>
-</div>
+</section>
 <footer>
 	Made by <span ID="NameObfuse"></span>
 	<div class="right">
@@ -144,7 +146,116 @@
 		<a itemprop="url" href="https://www.linkedin.com/in/annmariefoerster" target="_blank" rel="noopener" title="LinkedIn"><img src="icons/LI-In-Bug.png" alt="LinkedIn"></a>
 		<time id="year"></time>
 	</div>
+</main>
 </footer>
 </body>
 <script src="js/portfolio.js"></script>
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "Service",
+	  "serviceType": "Web and Graphic Design and Image Editing",
+	  "name": "Ann Foerster",
+	  "url": "https://annmariefoerster.com/",
+
+	  "areaServed": {
+		"@type": "Country",
+		"name": "USA"
+		},
+	"hasOfferCatalog": {
+		"@type": "OfferCatalog",
+		"name": "Visual Design services",
+		"itemListElement": [
+		{
+			"@type": "OfferCatalog",
+			"name": "Web Design",
+			"itemListElement": [
+			{
+			"@type": "Offer",
+			"itemOffered": {
+				"@type": "Service",
+				"name": "Wireframing and Prototyping"
+			}
+			},
+			{
+			"@type": "Offer",
+			"itemOffered": {
+				"@type": "Service",
+				"name": "Basic Web Page HTML and CSS Coding"
+				}
+			},
+			{
+			"@type": "Offer",
+			"itemOffered": {
+				"@type": "Service",
+				"name": "WordPress Installation and Setup"
+				}
+			},
+			{
+			"@type": "Offer",
+			"itemOffered": {
+				"@type": "Service",
+				"name": "Woocommerce Installation and Setup"
+				}
+				}
+				]
+			},
+			{
+				"@type": "OfferCatalog",
+				"name": "Graphic Design services",
+				"itemListElement": [
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Brochures and Flyers"
+					}
+					},
+					{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Posters"
+					}
+					},
+					{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Social Media Posts"
+					}
+					}
+				]
+			},
+			{
+				"@type": "OfferCatalog",
+				"name": "Image Editing services",
+				"itemListElement": [
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Image Enhancement"
+				}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Background Removal"
+					}
+					},
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Image and Photo Repair"
+						}
+						}
+				]
+			}
+		]
+	}
+	}
+	</script>
 </html>
