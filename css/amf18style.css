@@ -138,6 +138,13 @@ padding: .5rem;
 letter-spacing: .02rem;
 }
 
+.externalnote {
+  display: block;
+  margin-top: -1.25rem;
+  color: var(--color-smoothie);
+  font-size: 0.7rem;
+}
+
 .right {
   display: block;
   float: right;
@@ -153,6 +160,7 @@ letter-spacing: .02rem;
 }
 
 h1, h2, h3, h4, h5 {
+  margin: 2.5rem 0 1.5rem 0;
   font-family: 'Roboto Condensed', sans-serif, 'Open Sans', 'Trebuchet MS', sans-serif !important;
 }
 
@@ -447,6 +455,11 @@ form {
   width: auto !important;
 }
 
+.outicon:hover {
+  filter: brightness(10);
+  -webkit-filter: brightness(10);
+}
+
 footer {
 display: block;
 box-sizing: inherit;
@@ -472,8 +485,8 @@ footer img {
 }
 
 .lighten {
-  filter: brightness(5);
-  -webkit-filter: brightness(5);
+  filter: brightness(10);
+  -webkit-filter: brightness(10);
 }
 
 .clear {
