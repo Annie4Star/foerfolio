@@ -449,6 +449,8 @@ form {
   vertical-align: middle;
 }
 
+.inline h2 {margin: 0;}
+
 .inline-img {
   margin-bottom: 0;
   height: 16px !important;
