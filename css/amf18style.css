@@ -160,7 +160,6 @@ letter-spacing: .02rem;
 }
 
 h1, h2, h3, h4, h5 {
-  margin: 2.5rem 0 1.5rem 0;
   font-family: 'Roboto Condensed', sans-serif, 'Open Sans', 'Trebuchet MS', sans-serif !important;
 }
 
@@ -448,8 +447,6 @@ form {
   display: inline-block;
   vertical-align: middle;
 }
-
-.inline h2 {margin: 0;}
 
 .inline-img {
   margin-bottom: 0;
