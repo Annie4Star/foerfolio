@@ -391,6 +391,12 @@ form button {
   background-color: var(--color-plum);
 }
 
+summary {
+  cursor: pointer;
+}
+
+summary:active {border: none;}
+
 form {
   padding: 1rem 0 5rem 0;
 }
@@ -458,7 +464,7 @@ form {
 }
 
 .smoothiebg .outicon {
-  filter: brightness(.45);
+  filter: brightness(0.6);
 }
 
 footer {
