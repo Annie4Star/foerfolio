@@ -456,16 +456,6 @@ form {
   vertical-align: middle;
 }
 
-.inline-img {
-  margin-bottom: 0;
-  height: 16px !important;
-  width: auto !important;
-}
-
-.smoothiebg .outicon {
-  filter: brightness(0.6);
-}
-
 footer {
 display: block;
 box-sizing: inherit;
