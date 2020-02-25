@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=David+Libre|Roboto+Condensed:300,400,700&display=swap');
-@import-normalize;
 
 :root {
   --color-white: #fff;
@@ -485,15 +484,10 @@ font-size: 0.9rem;
 clear: both;
 }
 
-footer img {
+footer i {
   margin: 0 0.45rem;
   height: 16px;
   width: auto;
-}
-
-.lighten {
-  filter: brightness(10);
-  -webkit-filter: brightness(10);
 }
 
 .clear {
