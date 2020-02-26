@@ -32,6 +32,7 @@
 
   gtag('config', 'UA-153786893-1');
 </script>
+<script src="https://www.google.com/recaptcha/api.js?render=_6LeiPtkUAAAAADl29z_HkWQcwM58fGk_J5CSRfmH"></script>
 </head>
 <body>
 	<header>
@@ -226,11 +227,10 @@
 </main>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://www.google.com/recaptcha/api.js?render=_6LeiPtkUAAAAADl29z_HkWQcwM58fGk_J5CSRfmH"></script>
 <script>
 grecaptcha.ready(function() {
-    grecaptcha.execute('_6LeiPtkUAAAAADl29z_HkWQcwM58fGk_J5CSRfmH', {action: 'workpage'}).then(function(token) {
-       ...
+    grecaptcha.execute('6LeiPtkUAAAAADl29z_HkWQcwM58fGk_J5CSRfmH', {action: 'workpage'}).then(function(token) {
+       console.log(token)
     });
 });
 </script>
