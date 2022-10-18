@@ -23,3 +23,21 @@ function respFunction() {
       x.style.display = "block";
     }
   }
+
+  function fnCheckForRestrictedWords () {
+    var restrictedWords = new Array("google", "rank", "ranking");
+    var txtInput = document.getElementById("company").value;
+    var error = 0;
+    for (var i = 0; i < restrictedWords.length; i++) {
+      var val = restrictedWords[i];
+      if ((txtInput.toLowerCase()).indexOf(val.toString()) > -1) {
+        error = error + 1;
+      }
+    }
+    if (error > 0) {
+      alert('There have been too many fraudulent submissions using this term, and its use in requests to contact me has been blocked.')
+    }
+    else {
+      document.contform.submit();
+    }
+  }
